@@ -37,7 +37,15 @@ def prettify(phrase, length):
 '''
 Test phrase!
 '''
-phrase  = "I am free because I know that I alone am morally responsible for everything I do.\nI am free, no matter what rules surround me.\nIf I find them tolerable, I tolerate them; if I find them too obnoxious, I break them.\nI am free because I know that I alone am morally responsible for everything I do.\n"
+phrase  = "I am free because I know that I alone"
+phrase += " am morally responsible for everything"
+phrase += " I do.\nI am free, no matter what rules" 
+phrase += " surround me.\nIf I find them tolerable,"
+phrase += " I tolerate them; if I find them too"
+phrase += " obnoxious, I break them.\nI am free "
+phrase += "because I know that I alone am morally "
+phrase += "responsible for everything I do.\n"
+phrase += "- Robert A Heinlein"
 
 print "\n\n\n---------- Phrase ----------\n\n" 
 print phrase
