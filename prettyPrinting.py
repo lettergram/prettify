@@ -35,22 +35,21 @@ def prettify(phrase, length):
 
 
 '''
-Test phrase!
+Loads a phrase/passage from a document
 '''
-phrase  = "I am free because I know that I alone"
-phrase += " am morally responsible for everything"
-phrase += " I do.\nI am free, no matter what rules" 
-phrase += " surround me.\nIf I find them tolerable,"
-phrase += " I tolerate them; if I find them too"
-phrase += " obnoxious, I break them.\nI am free "
-phrase += "because I know that I alone am morally "
-phrase += "responsible for everything I do.\n"
-phrase += "- Robert A Heinlein"
+def loadPhrase(filename):
+    file = open(filename)
+    phrase = ""
+    for line in file:
+        phrase += line
+    return phrase
+
+phrase = loadPhrase("testfile.txt")
 
 print "\n\n\n---------- Phrase ----------\n\n" 
 print phrase
 print "\n---------- Prettify ----------\n\n"
-print(prettify(phrase, 39))
+print prettify(phrase, 39)
 
 
 
